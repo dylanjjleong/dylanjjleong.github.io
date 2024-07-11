@@ -48,7 +48,9 @@ layout: default
         <a href="{{ '/news/' | relative_url }}" style="color: inherit">news</a>
       </h2>
       {% include news.liquid limit=true %}
+      <hr>
     {% endif %}
+
 
     <!-- Latest posts -->
     {% if site.latest_posts.enabled %}
@@ -56,19 +58,18 @@ layout: default
         <a href="{{ '/blog/' | relative_url }}" style="color: inherit">latest posts</a>
       </h2>
       {% include latest_posts.liquid %}
+      <hr>
     {% endif %}
 
-    <hr>
-
+  
     <!-- Selected papers -->
     {% if page.selected_papers %}
       <h2>
         <a href="{{ '/publications/' | relative_url }}" style="color: inherit">selected publications</a>
       </h2>
       {% include selected_papers.liquid %}
+      <hr>
     {% endif %}
-
-    <hr>
 
     <!-- Social -->
     {% if page.social %}
