@@ -1,7 +1,10 @@
 ---
 permalink: /robots.txt
 ---
-User-agent: *
-Disallow:
+
+{% for bot in site.data.bots %}
+User-agent: {{ bot }}
+Disallow: /
+{% endfor %}
 
 Sitemap: {{ site.baseurl | prepend: site.url }}/sitemap.xml
