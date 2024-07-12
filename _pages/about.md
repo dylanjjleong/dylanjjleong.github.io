@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: Economist | Data Scientist
+subtitle: Economics | Data Science
 
 profile:
   align: right
